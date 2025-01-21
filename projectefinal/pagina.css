@@ -1,0 +1,183 @@
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Capçalera */
+.hero-header {
+    background-color: #111;
+    color: white;
+    position: relative;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.header-content .logo h1 {
+    font-size: 1.8rem;
+}
+
+.header-content nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.header-content nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.header-content nav ul li.search {
+    position: relative;
+}
+
+
+.header-content nav ul li.search input {
+    display: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    width: 200px;
+    transition: width 0.3s ease;
+}
+
+.header-content nav ul li.search input:focus {
+    width: 250px;
+}
+
+.header-content nav ul li.search .search-btn {
+    background: none;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.header-content nav ul li.search .search-btn i {
+    color: white;
+    font-size: 1.2rem;
+}
+
+
+.hero-banner {
+    background: url('https://via.placeholder.com/1200x400?text=Hero+Image') no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-banner h1 {
+    color: white;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+
+.exchanges {
+    padding: 2rem;
+    text-align: center;
+}
+
+.exchanges h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    color: #111;
+    margin: 1rem 0 0.5rem;
+}
+
+.card p {
+    color: #555;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.card.new h3::after {
+    content: " New";
+    color: #fff;
+    background: #28a745;
+    padding: 0.2rem 0.4rem;
+    margin-left: 0.5rem;
+    font-size: 0.8rem;
+    border-radius: 5px;
+}
+
+.header-content nav ul li a:hover {
+    transform: scale(1.1);
+    color: #28a745; 
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.load-more {
+    margin-top: 2rem;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    background: #111;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.load-more:hover {
+    transform: scale(1.1);
+    background: #28a745; /* Cambiamos el color de fondo al pasar el ratón */
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #111;
+    color: white;
+    margin-top: 2rem;
+}

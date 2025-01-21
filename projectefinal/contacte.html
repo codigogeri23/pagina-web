@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacte</title>
+  <link rel="stylesheet" href="contacte.css">
+</head>
+<body>
+  <!-- Nova capçalera basada en pagina.html -->
+  <header class="hero-header">
+    <div class="header-content">
+      <div class="logo">
+        <h1>SkillSwap</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inici</a></li>
+          <li><a href="sol·licituds.html">Sol·licituds</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="contacte.html" class="active">Contacte</a></li>
+          <li class="search">
+            <button class="search-btn" id="searchButton">
+              <i class="fas fa-search"></i> 
+            </button>
+            <input type="text" id="searchInput" placeholder="Cerca..." aria-label="Cerca">
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="hero-banner">
+      <h1>Contacte</h1>
+    </div>
+  </header>
+
+  <!-- Imatge superior amb títol eliminada -->
+
+  <!-- Formulari de contacte -->
+  <main>
+    <section class="contact-form">
+      <h2>Contacta amb nosaltres</h2>
+      <p>
+        Per a més informació sobre els nostres productes i serveis, no dubtis a escriure'ns. 
+        El nostre equip sempre estarà disponible per ajudar-te.
+      </p>
+      <div class="contact-info">
+        <div class="info-block">
+          <span>📍</span>
+          <p>
+            <strong>Adreça</strong><br>
+            226 5th SE Avenue, Nova York NY10000, Estats Units
+          </p>
+        </div>
+        <div class="info-block">
+          <span>📞</span>
+          <p>
+            <strong>Telèfon</strong><br>
+            Mòbil: (+84) 546-6789<br>
+            Línia directa: (+84) 456-6789
+          </p>
+        </div>
+        <div class="info-block">
+          <span>⏰</span>
+          <p>
+            <strong>Horari</strong><br>
+            Dilluns-Divendres: 9:00 - 22:00<br>
+            Dissabte-Diumenge: 9:00 - 21:00
+          </p>
+        </div>
+      </div>
+      <form>
+        <div class="form-group">
+          <label for="name">El teu nom</label>
+          <input type="text" id="name" name="name" placeholder="Escriu el teu nom">
+        </div>
+        <div class="form-group">
+          <label for="email">Adreça electrònica</label>
+          <input type="email" id="email" name="email" placeholder="Exemple@domini.com">
+        </div>
+        <div class="form-group">
+          <label for="subject">Assumpte</label>
+          <input type="text" id="subject" name="subject" placeholder="Aquest camp és opcional">
+        </div>
+        <div class="form-group">
+          <label for="message">Missatge</label>
+          <textarea id="message" name="message" placeholder="Escriu el teu missatge aquí"></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
